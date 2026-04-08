@@ -10,10 +10,15 @@ namespace CaesarCipher
     {
         public class CaesarCipher
         {
-            public int Shift(int shiftAmount)
+            // the below is me trying to adjust between what you wrote in class and what the dang machine is trying to push 
+            // clearly this doesn't have the alphabet in it yet... 
+            public int ShiftForward(int shiftAmount)
             {
                 return 22;
             }
-        }
+            public int ShiftBackward(int shiftAmount)
+            {
+                return 22;
+            }
     }
 }

@@ -14,9 +14,9 @@ namespace TestCipher
         }
 
         [Test]
-        public void Test1()
+        public void TestMoveForward()
         {
-            Assert.Pass();
+            var r = c.();
         }
     }
 }
