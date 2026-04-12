@@ -12,13 +12,14 @@ namespace CaesarCipher
         {
             // the below is me trying to adjust between what you wrote in class and what the dang machine is trying to push 
             // clearly this doesn't have the alphabet in it yet... 
-            public int ShiftForward(int shiftAmount)
+            public char ShiftForward(char letter)
             {
-                return 22;
+                return 'z';
             }
-            public int ShiftBackward(int shiftAmount)
+            public char ShiftBackward(char letter)
             {
-                return 22;
+                return 'a';
             }
+        }
     }
 }
