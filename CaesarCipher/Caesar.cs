@@ -8,18 +8,14 @@ namespace CaesarCipher
 {
     public class Caesar
     {
-        public class CaesarCipher
-        {
-            // the below is me trying to adjust between what you wrote in class and what the dang machine is trying to push 
-            // clearly this doesn't have the alphabet in it yet... 
-            public char ShiftForward(char letter)
+            public string ShiftForward(string message)
             {
-                return 'z';
+                
+                return "";
             }
-            public char ShiftBackward(char letter)
+            public string ShiftBackward(string message)
             {
-                return 'a';
+                return "";
             }
-        }
     }
 }
