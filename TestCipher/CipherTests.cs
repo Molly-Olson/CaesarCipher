@@ -1,27 +1,28 @@
-﻿using CaesarCipher; //why is it not finding this dang project?!
+﻿using NUnit.Framework;
+using CaesarCipher; //why is it not finding this dang project?!
 
 namespace TestCipher
 {
     public class CipherTests
     {
-        CaesarCipher.Cipher c;
+        Caesar c;
 
         [SetUp]
         public void Setup()
         {
-            c = new CaesarCipher.Cipher();
+            c = new Caesar();
         }
 
         [Test]
         public void TestMoveForward()
         {
-            var r = c.MoveForward("The slow brown cow.");
+            var r = c.ShiftForward("The slow brown cow.");
             Assert.That(r, Is.EqualTo("Ftq exai ndaiz oai."));
         }
         [Test]
         public void TestMoveBackward()
         {
-            var r = c.MoveBackward("The slow brown cow.");
+            var r = c.ShiftBackward("The slow brown cow.");
             Assert.That(r, Is.EqualTo("Hvs gzcl pfckb qck.."));
         }
     }
